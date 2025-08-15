@@ -14,7 +14,6 @@ import { useCookie } from '#app'
 const { locale } = useI18n()
 const langCookie = useCookie('site_language')
 
-// دالة لضبط اتجاه الصفحة ولغة الـ <html>
 const setPageDirection = (lang) => {
   const dir = lang === 'ar' ? 'rtl' : 'ltr'
   document.documentElement.setAttribute('dir', dir)
@@ -22,20 +21,14 @@ const setPageDirection = (lang) => {
 }
 
 onMounted(() => {
-  if (process.client) {
-    // تحميل اللغة من الكوكيز إذا موجودة
-    if (langCookie.value && langCookie.value !== locale.value) {
-      locale.value = langCookie.value
-    }
-    setPageDirection(locale.value)
+  if (langCookie.value && langCookie.value !== locale.value) {
+    locale.value = langCookie.value
   }
+  setPageDirection(locale.value)
 })
 
-// مراقبة أي تغيير في اللغة وتحديث الاتجاه والكوكيز
 watch(locale, (newLocale) => {
-  if (process.client) {
-    setPageDirection(newLocale)
-    langCookie.value = newLocale
-  }
+  setPageDirection(newLocale)
+  langCookie.value = newLocale
 })
 </script>
