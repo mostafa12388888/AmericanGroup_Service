@@ -1,0 +1,30 @@
+{
+  "home_title": " الرئيسية",
+  "home_description": " مرحباً بك في موقعنا",
+  "common": {
+    "changeLanguage": "تغيير اللغة",
+    "currentLanguage": "اللغة الحالية",
+    "translationTests": "اختبارات الترجمة",
+    "loading": "جارٍ التحميل..."
+  },
+  "welcome": "أهلاً وسهلاً",
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "contact": "اتصل بنا"
+  },
+  "pages": {
+    "home": {
+      "title": "الصفحة الرئيسية",
+      "description": "مرحباً بك في موقعنا",
+      "subtitle": "رحلتك تبدأ من هنا"
+    }
+  },
+  "forms": {
+    "title": "نموذج",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "submit": "إرسال",
+    "cancel": "إلغاء"
+  }
+}

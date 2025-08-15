@@ -1,0 +1,31 @@
+{
+  "home_title": "Home Page",
+  "home_description": "Welcome to our website",
+  "common": {
+    "changeLanguage": "Change Language",
+    "currentLanguage": "Current Language",
+    "translationTests": "Translation Tests",
+    "loading": "Loading..."
+  },
+  "welcome": "Welcome",
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": {
+      "title": "Home Page",
+      "description": "Welcome to our website",
+      "subtitle": "Your journey starts here"
+    }
+  },
+  "forms": {
+    "title": "Form",
+    "name": "Name",
+    "email": "Email",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+
+}
