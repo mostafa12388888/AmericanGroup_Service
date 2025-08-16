@@ -1,5 +1,6 @@
 // locales/ar.js
 export default {
+  
   // Navigation
   nav: {
     home: 'الرئيسية',

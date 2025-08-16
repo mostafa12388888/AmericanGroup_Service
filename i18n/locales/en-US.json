@@ -1,31 +1,73 @@
 {
-  "home_title": "Home Page",
-  "home_description": "Welcome to our website",
-  "common": {
-    "changeLanguage": "Change Language",
-    "currentLanguage": "Current Language",
-    "translationTests": "Translation Tests",
-    "loading": "Loading..."
+  "company": {
+    "name": "Amerikia Group",
+    "description": "Specialized Electrical Equipment Repair Services"
   },
-  "welcome": "Welcome",
-  "navigation": {
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact"
+  "home": {
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us"
   },
-  "pages": {
-    "home": {
-      "title": "Home Page",
-      "description": "Welcome to our website",
-      "subtitle": "Your journey starts here"
+  "services": {
+    "repair": "Equipment Repair",
+    "repairDesc": "We repair all types of electrical equipment with the highest quality and best prices",
+    "maintenance": "Regular Maintenance",
+    "maintenanceDesc": "Regular maintenance services to ensure your equipment operates at peak efficiency",
+    "consultation": "Technical Consultation",
+    "consultationDesc": "We provide specialized technical consultations for selecting and maintaining electrical equipment"
+  },
+  "contact": {
+    "phone": "Call Us",
+    "email": "Email Us",
+    "location": "Our Location",
+    "address": "Cairo, Egypt"
+  },
+  "errors": {
+    "needHelp": "Need help? Contact us:",
+    "404": {
+      "title": "Page Not Found",
+      "message": "Sorry, we couldn't find the page you're looking for. It might have been deleted, moved to a different location, or you may not have permission to access it.",
+      "goHome": "Go Home",
+      "goBack": "Go Back"
+    },
+    "403": {
+      "title": "Access Forbidden",
+      "message": "Sorry, you don't have permission to access this page or resource. Please log in or check your permissions to continue.",
+      "goHome": "Go Home",
+      "login": "Login"
+    },
+    "400": {
+      "title": "Bad Request",
+      "message": "Sorry, there was an error with the data sent or the request format is incorrect. Please check your input and try again.",
+      "goBack": "Go Back",
+      "goHome": "Go Home",
+      "tips": {
+        "title": "Tips to resolve this:",
+        "checkUrl": "Check if the URL is correct",
+        "checkData": "Verify your input data and ensure it's complete",
+        "tryAgain": "Try again in a few minutes"
+      }
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "Sorry, an internal server error occurred and we cannot process your request at this time. Our technical team is working to resolve this issue. Please try again in a few minutes.",
+      "refresh": "Refresh Page",
+      "goHome": "Go Home"
     }
   },
-  "forms": {
-    "title": "Form",
-    "name": "Name",
-    "email": "Email",
-    "submit": "Submit",
-    "cancel": "Cancel"
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "buttons": {
+    "tryAgain": "Try Again",
+    "back": "Back",
+    "home": "Home",
+    "contact": "Contact Us",
+    "refresh": "Refresh"
   }
-
 }
