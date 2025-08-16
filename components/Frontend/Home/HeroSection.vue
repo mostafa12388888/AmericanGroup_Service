@@ -19,7 +19,7 @@
             <div class="text-center text-white px-4">
               <h1 class="text-4xl md:text-6xl font-bold mb-4">دعم فني 24 ساعة</h1>
               <p class="text-lg md:text-xl mb-8">اتصل بنا في أي وقت وسنوصلك بأقرب فني معتمد</p>
-              <NuxtLink to="/contact/contactUs">
+              <NuxtLink to="/contact">
                 <button 
                   class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300"
                 >
@@ -44,7 +44,7 @@
                 صيانة <span class="text-orange-500">وايت وستنجهاوس</span> المعتمدة في مصر
               </h1>
               <p class="text-lg md:text-xl mb-8">خدمة منزلية - فنيين معتمدين - قطع غيار أصلية</p>
-              <NuxtLink to="/contact/contactUs">
+              <NuxtLink to="/contact">
                 <button 
                   class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300"
                 >
@@ -67,7 +67,7 @@
             <div class="text-center text-white px-4">
               <h1 class="text-4xl md:text-6xl font-bold mb-4">فروعنا في جميع مناطق القاهرة</h1>
               <p class="text-lg md:text-xl mb-8">اطلب صيانة من أي مكان، نصلك في نفس اليوم</p>
-              <NuxtLink to="/contact/contactUs">
+              <NuxtLink to="/contact">
                 <button 
                   class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300"
                 >
