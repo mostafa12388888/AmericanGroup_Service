@@ -4,17 +4,17 @@
     <div class="flex w-full">
       <!-- Logo -->
       <div
-        class="flex-none flex items-center justify-center px-4 bg-white border-r border-gray-200"
+        class="flex-none flex items-center justify-center bg-white border-r border-gray-200"
       >
-        <NuxtLink
-          to="/"
-          aria-label="Go to homepage"
-          class="flex items-center space-x-2"
-        >
-          <img src="/" alt="Helper - Relocation Experts" class="h-10" />
-          <span class="font-bold text-lg text-gray-800 hidden md:inline"
-            >Helper</span
-          >
+        <NuxtLink to="/" aria-label="Go to homepage" class="flex items-center">
+          <img
+            src="../../../public/images/logo/logog.png"
+            alt="AMERICAN GROUP"
+            class="h-20 w-full text"
+          />
+          <span class="font-bold text-lg text-gray-800 hidden md:inline">
+            AMERICAN GROUP
+          </span>
         </NuxtLink>
       </div>
 

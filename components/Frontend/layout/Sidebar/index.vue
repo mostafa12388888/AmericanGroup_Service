@@ -20,20 +20,30 @@
       aria-label="Navigation sidebar"
     >
       <!-- Header Section -->
-      <div class="flex items-center justify-between p-4 border-b border-gray-800">
+      <div
+        class="flex items-center justify-between p-4 border-b border-gray-800"
+      >
         <!-- Logo (always visible) -->
-        <div class="flex items-center space-x-3 min-w-0">
-          <div class="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
-            <span class="text-white font-bold text-sm">H</span>
-          </div>
-          <span 
-            class="font-bold text-lg text-white truncate transition-opacity duration-300"
+         <div class="p-4">
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0"
+          >
+          <img
+            src="../../../../public/images/logo/logog.png"
+            alt="AMERICAN GROUP"
+            class="h-10 text"
+          />          </div>
+          <div
+            class="min-w-0 transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
-            Helper
-          </span>
+            <h3 class="text-white font-medium text-sm truncate">AG</h3>
+            <p class="text-gray-400 text-xs truncate">AMERICAN GROUP</p>
+          </div>
         </div>
-        
+      </div>
+
         <!-- Close Button (Mobile only) -->
         <button
           @click="$emit('close')"
@@ -45,20 +55,7 @@
       </div>
 
       <!-- Profile Section -->
-      <div class="p-4 border-b border-gray-800">
-        <div class="flex items-center space-x-3">
-          <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0">
-            <Icon name="uil:user" class="text-white text-lg" />
-          </div>
-          <div 
-            class="min-w-0 transition-opacity duration-300"
-            :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
-          >
-            <h3 class="text-white font-medium text-sm truncate">Welcome</h3>
-            <p class="text-gray-400 text-xs truncate">Service User</p>
-          </div>
-        </div>
-      </div>
+     
 
       <!-- Navigation Menu -->
       <nav class="flex-1 px-2 py-4 space-y-2 overflow-y-auto">
@@ -69,7 +66,7 @@
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
           <Icon name="uil:home" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -85,32 +82,34 @@
             :class="{ 'justify-center lg:px-2': !isExpanded }"
           >
             <Icon name="uil:wrench" class="text-white text-xl flex-shrink-0" />
-            <span 
+            <span
               class="text-white font-medium flex-1 text-left transition-opacity duration-300"
               :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
             >
               Appliances
             </span>
-            <Icon 
-              name="uil:angle-down" 
+            <Icon
+              name="uil:angle-down"
               class="text-white text-sm transition-transform duration-200"
-              :class="{ 
+              :class="{
                 'rotate-180': submenuOpen,
-                'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded 
+                'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded,
               }"
             />
           </button>
-          
+
           <!-- Submenu -->
-          <div 
+          <div
             class="overflow-hidden transition-all duration-300 ease-in-out"
-            :class="{ 
+            :class="{
               'max-h-0': !submenuOpen,
               'max-h-96': submenuOpen,
-              'lg:opacity-0 lg:max-h-0': !isExpanded
+              'lg:opacity-0 lg:max-h-0': !isExpanded,
             }"
           >
-            <div class="ml-6 mt-2 space-y-1 max-h-60 overflow-y-auto border-l border-gray-700 pl-4">
+            <div
+              class="ml-6 mt-2 space-y-1 max-h-60 overflow-y-auto border-l border-gray-700 pl-4"
+            >
               <NuxtLink
                 v-for="agency in agencies.slice(0, 10)"
                 :key="agency.slug"
@@ -119,7 +118,9 @@
               >
                 {{ agency.name }}
               </NuxtLink>
-              <button class="block px-3 py-2 text-red-400 hover:text-red-300 rounded-lg text-sm transition-colors w-full text-left">
+              <button
+                class="block px-3 py-2 text-red-400 hover:text-red-300 rounded-lg text-sm transition-colors w-full text-left"
+              >
                 View All ({{ agencies.length }}) →
               </button>
             </div>
@@ -132,8 +133,11 @@
           class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-800 transition-all duration-200 group"
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
-          <Icon name="uil:map-marker" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <Icon
+            name="uil:map-marker"
+            class="text-white text-xl flex-shrink-0"
+          />
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -148,7 +152,7 @@
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
           <Icon name="uil:newspaper" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -162,8 +166,11 @@
           class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-800 transition-all duration-200 group"
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
-          <Icon name="uil:info-circle" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <Icon
+            name="uil:info-circle"
+            class="text-white text-xl flex-shrink-0"
+          />
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -178,7 +185,7 @@
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
           <Icon name="uil:phone" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -191,7 +198,7 @@
           :class="{ 'justify-center lg:px-2': !isExpanded }"
         >
           <Icon name="uil:question" class="text-white text-xl flex-shrink-0" />
-          <span 
+          <span
             class="text-white font-medium transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -213,7 +220,7 @@
           :class="{ 'lg:px-2': !isExpanded }"
         >
           <Icon name="uil:clipboard-notes" class="text-xl flex-shrink-0" />
-          <span 
+          <span
             class="transition-opacity duration-300"
             :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
           >
@@ -222,22 +229,28 @@
         </NuxtLink>
 
         <!-- Contact Info -->
-        <div 
+        <div
           class="mt-4 space-y-2 text-xs transition-opacity duration-300"
           :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
         >
-          <a href="tel:+1123456789" class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
+          <a
+            href="tel:+1123456789"
+            class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+          >
             <Icon name="uil:phone" class="text-sm" />
             <span>(+1) 123 456 789</span>
           </a>
-          <a href="mailto:info@example.com" class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
+          <a
+            href="mailto:info@example.com"
+            class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+          >
             <Icon name="uil:envelope" class="text-sm" />
             <span>info@example.com</span>
           </a>
         </div>
 
         <!-- Social Links -->
-        <div 
+        <div
           class="mt-4 flex justify-center space-x-3 transition-opacity duration-300"
           :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
         >
@@ -259,8 +272,8 @@
         class="hidden lg:block absolute -right-3 top-20 w-6 h-6 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center transition-colors shadow-lg"
         aria-label="Toggle sidebar"
       >
-        <Icon 
-          name="uil:angle-left" 
+        <Icon
+          name="uil:angle-left"
           class="text-white text-sm transition-transform duration-300"
           :class="{ 'rotate-180': !isExpanded }"
         />
@@ -270,18 +283,18 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted } from "vue";
 
 // Props and Emits
 const props = defineProps({
-  isOpen: Boolean
-})
+  isOpen: Boolean,
+});
 
-const emit = defineEmits(['close'])
+const emit = defineEmits(["close"]);
 
 // State
-const submenuOpen = ref(false)
-const isExpanded = ref(true)
+const submenuOpen = ref(false);
+const isExpanded = ref(true);
 
 // Data
 const agencies = [
@@ -299,60 +312,64 @@ const agencies = [
   { name: "Kenwood", slug: "kenwood" },
   { name: "Philips", slug: "philips" },
   { name: "Haier", slug: "haier" },
-  { name: "Daewoo", slug: "daewoo" }
-]
+  { name: "Daewoo", slug: "daewoo" },
+];
 
 // Computed
 const sidebarClasses = computed(() => {
   return {
-    'w-64': isExpanded.value || window.innerWidth < 1024,
-    'w-20': !isExpanded.value && window.innerWidth >= 1024,
-    'lg:hover:w-64': !isExpanded.value
-  }
-})
+    "w-64": isExpanded.value || window.innerWidth < 1024,
+    "w-20": !isExpanded.value && window.innerWidth >= 1024,
+    "lg:hover:w-64": !isExpanded.value,
+  };
+});
 
 // Methods
 const toggleSubmenu = () => {
-  submenuOpen.value = !submenuOpen.value
-}
+  submenuOpen.value = !submenuOpen.value;
+};
 
 const toggleExpansion = () => {
-  isExpanded.value = !isExpanded.value
+  isExpanded.value = !isExpanded.value;
   if (!isExpanded.value) {
-    submenuOpen.value = false
+    submenuOpen.value = false;
   }
-}
+};
 
 // Auto-expand on hover (desktop only)
 const handleMouseEnter = () => {
   if (window.innerWidth >= 1024 && !isExpanded.value) {
     // Temporarily show content on hover
   }
-}
+};
 
 // Initialize
 onMounted(() => {
   // Set initial state based on screen size
   if (window.innerWidth >= 1024) {
-    isExpanded.value = true
+    isExpanded.value = true;
   }
-})
+});
 </script>
 
 <style scoped>
 /* Backdrop transitions */
-.backdrop-enter-active, .backdrop-leave-active {
+.backdrop-enter-active,
+.backdrop-leave-active {
   transition: opacity 0.3s ease;
 }
-.backdrop-enter-from, .backdrop-leave-to {
+.backdrop-enter-from,
+.backdrop-leave-to {
   opacity: 0;
 }
 
 /* Sidebar slide transitions */
-.slide-enter-active, .slide-leave-active {
+.slide-enter-active,
+.slide-leave-active {
   transition: transform 0.3s ease;
 }
-.slide-enter-from, .slide-leave-to {
+.slide-enter-from,
+.slide-leave-to {
   transform: translateX(-100%);
 }
 
@@ -367,12 +384,12 @@ onMounted(() => {
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #6B7280;
+  background: #6b7280;
   border-radius: 2px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: #9CA3AF;
+  background: #9ca3af;
 }
 
 /* Smooth transitions for all elements */
