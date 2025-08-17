@@ -29,7 +29,6 @@
 </template>
 
 <script setup>
-console.log('FrontendLayout loaded',"=>>>>>>>>>>>>>>>>>>>>>>>MOstafa>>>>>>>>Mostafa>>>>>>>>>>>>>")
 import { ref, watch, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 

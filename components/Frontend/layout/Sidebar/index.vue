@@ -185,6 +185,19 @@
             Contact
           </span>
         </NuxtLink>
+        <NuxtLink
+          to="/faq"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-800 transition-all duration-200 group"
+          :class="{ 'justify-center lg:px-2': !isExpanded }"
+        >
+          <Icon name="uil:question" class="text-white text-xl flex-shrink-0" />
+          <span 
+            class="text-white font-medium transition-opacity duration-300"
+            :class="{ 'lg:opacity-0 lg:w-0 lg:overflow-hidden': !isExpanded }"
+          >
+            Frequently Asked Questions
+          </span>
+        </NuxtLink>
         <!-- Language Switcher -->
         <div class="mt-4">
           <FrontendLanguageSwitcher />
