@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[#1f1f1f] py-16"
+    class="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 py-16"
     aria-labelledby="features-title"
     role="region"
   >
@@ -27,7 +27,7 @@
 
         <!-- Feature 3 - Highlighted -->
         <article
-          class="relative bg-orange-600 text-white p-6 rounded-lg shadow-md overflow-hidden text-right"
+          class="relative bg-green-400 text-white p-6 rounded-lg shadow-md overflow-hidden text-right"
           aria-label="توكيل صيانة وايت وستنجهاوس"
         >
           <h3 class="text-xl font-bold mb-2">توكيل صيانة وايت وستنجهاوس</h3>
@@ -73,16 +73,16 @@
           <p class="text-gray-700 text-sm leading-relaxed">
             لطلب الخدمة أو أي عطل في أجهزتك، يُرجى التواصل معنا على الأرقام:
             <a
-              href="tel:01009999762"
+              href="tel:+20 114 684 8300"
               class="block underline text-blue-600 mt-1"
-              aria-label="اتصل على الرقم 01009999762"
-              >01009999762</a
+              aria-label="اتصل على الرقم +20 114 684 8300"
+              >+20 114 684 8300</a
             >
             <a
-              href="tel:01150530511"
+              href="tel:+20 114 684 8300"
               class="block underline text-blue-600"
-              aria-label="اتصل على الرقم 01150530511"
-              >01150530511</a
+              aria-label="اتصل على الرقم +20 114 684 8300"
+              >+20 114 684 8300</a
             >
           </p>
         </article>

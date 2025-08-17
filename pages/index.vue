@@ -4,6 +4,5 @@
     <FrontendHomeServicesGrid />
     <FrontendAgenciesSlider />
     <FrontendHomeFeaturesGrid />
-    <FrontendHomeFaqSection />
   </div>
 </template>
